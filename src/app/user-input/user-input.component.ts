@@ -12,7 +12,7 @@ import {InvestmentInput} from "../investment-input.model";
   styleUrl: './user-input.component.css'
 })
 export class UserInputComponent {
-  @Output() calculate = new EventEmitter<InvestmentInput>();
+  @Output() calculate = new EventEmitter<InvestmentInput>();//output because we will give it to the parent
   enteredInitialInvestment = '0';
   enteredAnnualInvestment = '0';
   enteredExpectedReturn = '5';
