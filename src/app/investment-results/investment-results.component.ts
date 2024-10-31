@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, input} from '@angular/core';
 import {InvestmentResult} from "../investmentg-result.model";
 import {CurrencyPipe} from "@angular/common";
 
@@ -12,5 +12,5 @@ import {CurrencyPipe} from "@angular/common";
   styleUrl: './investment-results.component.css'
 })
 export class InvestmentResultsComponent {
-  @Input() results?: InvestmentResult[];//input because we will get it from the parent
+  results = input<InvestmentResult[]>();//input because we will get it from the parent
 }
